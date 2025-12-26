@@ -6,27 +6,51 @@
 </head>
 <body>
 
-  <h1>Smart Campus Issue Reporter</h1>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SmartCampus</div>
+    <div class="nav-buttons">
+      <a href="login.html" class="btn ghost">Login</a>
+      <a href="signup.html" class="btn primary">Sign Up</a>
+    </div>
+  </nav>
 
-  <form>
-    <input type="text" placeholder="Issue Title"><br><br>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Smart Campus Issue Reporter</h1>
+    <p>
+      Report campus infrastructure issues instantly and help create
+      a cleaner, safer, and smarter campus environment.
+    </p>
 
-    <textarea placeholder="Describe the issue"></textarea><br><br>
+    <div class="hero-actions">
+      <a href="signup.html" class="btn primary large">Get Started</a>
+      <a href="login.html" class="btn ghost large">Login</a>
+    </div>
+  </section>
 
-    <select>
-      <option>Electrical</option>
-      <option>Plumbing</option>
-      <option>Sanitation</option>
-      <option>Infrastructure</option>
-    </select><br><br>
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>🛠 Easy Reporting</h3>
+      <p>Submit issues with images and location in seconds.</p>
+    </div>
 
-    <input type="file"><br><br>
+    <div class="feature-card">
+      <h3>⚡ Faster Fixes</h3>
+      <p>Issues are categorized and tracked efficiently.</p>
+    </div>
 
-    <input type="text" placeholder="Location"><br><br>
+    <div class="feature-card">
+      <h3>📊 Transparency</h3>
+      <p>View issue status and resolution progress.</p>
+    </div>
+  </section>
 
-    <button type="submit">Submit Issue</button>
-  </form>
+  <!-- Footer -->
+  <footer>
+    <p>Built for campus and community problem-solving</p>
+  </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
