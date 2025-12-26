@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Issue | Smart Campus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SmartCampus</div>
+    <div class="nav-buttons">
+      <a href="index.html" class="btn ghost">Home</a>
+      <a href="dashboard.html" class="btn ghost">Dashboard</a>
+      <a href="index.html" class="btn primary">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Report Issue Form -->
+  <div class="auth-container">
+    <h2>Report an Issue</h2>
+    <p class="auth-subtext">
+      Submit campus infrastructure problems for quick resolution
+    </p>
+
+    <form id="reportForm">
+      <input type="text" placeholder="Issue Title" required>
+
+      <textarea rows="4" placeholder="Describe the issue in detail" required></textarea>
+
+      <select required>
+        <option value="">Select Category</option>
+        <option>Electrical</option>
+        <option>Plumbing</option>
+        <option>Sanitation</option>
+        <option>Infrastructure</option>
+      </select>
+
+      <input type="text" placeholder="Location (Hostel / Block / Area)" required>
+
+      <input type="file" required>
+
+      <button type="submit" class="btn primary full">
+        Submit Issue
+      </button>
+    </form>
+  </div>
+
+  <!-- Redirect Logic -->
+  <script>
+    document.getElementById("reportForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Issue submitted successfully (demo)");
+      window.location.href = "dashboard.html";
+    });
+  </script>
+
+</body>
+</html>
